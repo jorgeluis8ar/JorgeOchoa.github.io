@@ -1,6 +1,6 @@
 :root {
   /* root color variables */
-  --links-color: #2E151B;
+  --links-color: #771C6D;
   --navfoot-green: #1C3334;
   --body-background: #f6f7fb;
   --ghost-white: ghostwhite;
@@ -14,7 +14,7 @@
   --trench-blue: #406885;
   --light-blue: #d0e9fe;
   --chocolate: rgb(210, 105, 30);
-  --maroon: #376E6F;
+  --headers-color: #376E6F;
   --lightest-gray: #e9ecef;
 }
 
@@ -36,7 +36,7 @@ p, ul, li, table, tr, td, dd, dt {
 }
 
 h1, h2, h3 {
-  color: var(--maroon) !important;
+  color: var(--headers-color) !important;
 }
 
 h4, h5, h6 {
@@ -114,7 +114,7 @@ h3:after {
 
 #projects-div .card-body h5 {
   text-align: left;
-  color: var(--maroon) !important;
+  color: var(--headers-color) !important;
   margin-top: -1rem;
   z-index: 1000;
 }
