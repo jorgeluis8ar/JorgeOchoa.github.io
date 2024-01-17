@@ -1,6 +1,6 @@
 :root {
   /* root color variables */
-  --bright-blue: #771C6D;
+  --links-color: #771C6D;
   --navfoot-green: #1e4210;
   --body-background: #f6f7fb;
   --ghost-white: ghostwhite;
@@ -93,7 +93,7 @@ h3:after {
 
 .list-group-item a,
 .list-group-item a i {
-  color: var(--bright-blue);
+  color: var(--links-color);
 }
 
 /* Projects ---------------------------------------------------------------- */
@@ -127,7 +127,7 @@ h3:after {
 }
 
 .card-action span {
-  color: var(--bright-blue);
+  color: var(--links-color);
   border: 1px solid rgba(0, 0, 0, .125);
   background: var(--white);
   padding: 2rem .8rem 1rem;
@@ -233,8 +233,8 @@ h3:after {
 }
 
 /* Color --------------------------------------------- */
-.bright-blue {
-  color: var(--bright-blue);
+.links-color {
+  color: var(--links-color);
 }
 
 .chocolate {
@@ -249,8 +249,8 @@ h3:after {
   color: var(--ghost-white);
 }
 
-.bright-blue {
-  color: var(--bright-blue);
+.links-color {
+  color: var(--links-color);
 }
 
 .light-blue {
@@ -326,7 +326,7 @@ cite {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: var(--bright-blue);
+  background-color: var(--links-color);
   color: var(--white) !important;
   padding: 8px 4px 10px 4px;
   border-radius: 2px 0 0 2px;
@@ -335,7 +335,7 @@ cite {
 }
 
 #back-to-top:hover {
-  background-color: var(--bright-blue);
+  background-color: var(--links-color);
   color: var(--white);
 }
 
@@ -366,7 +366,7 @@ cite {
 
 #wrapper a {
   font-size: inherit;
-  color: var(--bright-blue);
+  color: var(--links-color);
 }
 
 /* Search-box */
