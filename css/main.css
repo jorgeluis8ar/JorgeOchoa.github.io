@@ -457,8 +457,8 @@ input::placeholder {
 
 .cv-download {
   font-family: "Jost";
-  background-color: #771C6D;
-  border-color: #771C6D;
+  background-color: --headers-color;
+  border-color: --headers-color;
   color: #ffffff;
 
   &:hover {
