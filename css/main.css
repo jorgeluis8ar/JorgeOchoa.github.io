@@ -1,7 +1,7 @@
 :root {
   /* root color variables */
   --bright-blue: #007bff;
-  --nd-blue: #20364c;
+  --navfoot-green: #1e4210;
   --body-background: #f6f7fb;
   --ghost-white: ghostwhite;
   --alice-blue: aliceblue;
@@ -97,6 +97,7 @@ h3:after {
 }
 
 /* Projects ---------------------------------------------------------------- */
+
 #projects-div {
   margin-top: 3.5rem;
 }
@@ -148,6 +149,7 @@ h3:after {
 }
 
 /* Teaching section --------------------------------------------------------- */
+
 #teaching-section .card {
   border: none;
   border-bottom: 1px dotted var(--silver) !important;
@@ -282,7 +284,7 @@ h3:after {
 /* Navbar -------------------------------------------- */
 .bg-navbar,
 .bg-footer {
-  background: var(--nd-blue);
+  background: var(--navfoot-green);
 }
 
 #page-navbar nav {
@@ -302,7 +304,7 @@ h3:after {
 }
 
 #page-footer {
-  background: var(--nd-blue);
+  background: var(--navfoot-green);
   padding: 2rem 0 1.5rem;
 }
 
