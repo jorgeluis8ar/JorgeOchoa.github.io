@@ -454,3 +454,16 @@ input::placeholder {
   width: 100%;
   height: 100%;
 }
+
+.cv-download {
+  font-family: "Jost";
+  background-color: #771C6D;
+  border-color: #771C6D;
+  color: #ffffff;
+
+  &:hover {
+      background-color: #CF4446;
+      border-color: #CF4446;
+      color: #ffffff;
+  }
+}
