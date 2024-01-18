@@ -1,0 +1,85 @@
+---
+title: "The ultimate practical guide to multilevel multinomial conjoint analysis with R"
+date: 2024-01-18
+description: "Learn how to use quarto documents, create a preable, insert images, and other settings."
+image: index_files/figure-html/plot-amces-minivans-carpool-1.png
+author:
+  - name: Jorge Ochoa
+    email: jl.ochoa@uniandes.edu.co
+    affiliation: 
+    - name: CESED
+      city: Bogota
+      url: www.cesed.uniandes.edu.co
+twitter-card:
+  image: "index_files/figure-html/plot-amces-minivans-carpool-1.png"
+open-graph:
+  image: "index_files/figure-html/plot-amces-minivans-carpool-1.png"
+categories:
+  - r
+  - tidyverse
+  - ggplot
+  - statistics
+  - brms
+  - stan
+toc-depth: 4
+toc: true
+toc-title: Contents
+toc-location: left
+freeze: true
+format:
+  html:
+    fig-cap-location: bottom
+    code-tools: true
+    comments:
+      giscus: 
+        repo: jorgeluis8ar/JorgeOchoa.github.io
+        category: Blog comments
+        category-id: DIC_kwDOIg6EJc4CSz92
+        mapping: pathname
+    quarto-template-params:
+      banner-header-class: "blog-post"
+    title-block-banner: "#376E6F"  
+bibliography: references.json
+resources:
+  - "img/parks-rec-ols.mp4"
+doi: xxxxxxxxxxxxxxxxxxxxx
+citation: true
+---
+
+When political scientists, psychologists, economists, and other social scientists analyze conjoint data, they overwhelmingly do it with [ordinary least squares (OLS) regression](https://en.wikipedia.org/wiki/Ordinary_least_squares), or just standard linear regression (`lm(y ~ x)` in R; `reg y x` in Stata). Even if the outcome is binary, they'll use OLS and call it a linear probability model. The main R package for working with conjoint data in a frequentist way ([{cregg}](https://thomasleeper.com/cregg/)) uses OLS and linear probability models. Social scientists (and economists in particular) adore OLS.
+
+```{=html}
+<figure>
+<video controls loop width="90%" style="display: block; margin: auto;">
+  <source src="img/parks-rec-ols.mp4" type="video/mp4">
+</video>
+<figcaption>Video by <a href="https://twitter.com/theotheredmund/status/1349453230762196992">Edmund Helmer</a></figcaption>
+</figure>
+```
+# Part 1: Candy; single question; basic multinomial logit
+
+## The setup
+
+In this experiment, respondents are asked to choose which of these kinds of candies they'd want to buy. Respondents only see this question one time and all possible options are presented simultaneously.
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+A recent paper published in *Political Science Research and Methods* [@JensenMarbleScheve:2021] does an excellent job explaining the problem with using plain old OLS to estimate AMCEs and marginal means with conjoint data ([access the preprint here](https://williammarble.co/docs/CityLimits-April2020.pdf)). Their main argument boils down to this: OLS throws away too much useful information about (1) the relationships and covariance between the different combinations of feature levels offered to respondents, and (2) individual-specific differences in how respondents react to different feature levels.
