@@ -190,6 +190,14 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
       "type": "type4",
       "icon": "<i class='fa-solid fa-graduation-cap fa-fw fa-2x'></i>"
+    },
+    {
+      "name": "Test HTML project",
+      "link": "http://jorgeluis8ar.github.io/JorgeOchoa.github.io/files/html/thesis_test.html",
+      "image": "http://jorgeluis8ar.github.io/JorgeOchoa.github.io/files/thesises1.pdf",
+      "description": "This project holds a HTML file to test the implementation of quarto documents to upload to the webpage",
+      "type": "type4",
+      "icon": "<i class='fa-solid fa-graduation-cap fa-fw fa-2x'></i>"
     }
   ]
 }
